@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Galerije</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <a nav-transition="none" (click)="goToPuppies();">
+                    <ion-img class="item" src="../../assets/imgs/img-gallery/dog.jpg"></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a nav-transition="none" (click)="goToKittens();">
+                    <ion-img class="item" src="../../assets/imgs/img-gallery/cat.jpg"></ion-img>
+                </a>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <a nav-transition="none" (click)="goToOthers();">
+                    <ion-img class="item" src="../../assets/imgs/img-gallery/others.jpg"></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a nav-transition="none" (click)="goToLostNFound();">
+                    <ion-img class="item" src="../../assets/imgs/img-gallery/lostAndFound.jpg"></ion-img>
+                </a>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

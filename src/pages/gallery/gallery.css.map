@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,kBAAM;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,sBAAI;IACF,OAAO,EAAE,KAAK;IACd,WAAW,EAAE,IAAI;IACjB,YAAY,EAAE,IAAI;IAClB,MAAM,EAAE,IAAI;IACZ,KAAK,EAAE,IAAI",
+"sources": ["gallery.scss"],
+"names": [],
+"file": "gallery.css"
+}

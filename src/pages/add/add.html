@@ -1,0 +1,108 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Dodaj Ljubimca</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list-header class="item list-header">
+                <ion-label class="label">INFORMACIJE</ion-label>
+        <div class="button-effect"></div>
+    </ion-list-header>
+    <ion-row radio-group [(ngModel)]="gender">
+        <ion-col>
+            <ion-item>
+                <ion-label>Zenski</ion-label>
+                <ion-radio value="female" checked></ion-radio>
+            </ion-item>
+        </ion-col>
+        <ion-col>
+            <ion-item>
+                <ion-label>Muski</ion-label>
+                <ion-radio value="male"></ion-radio>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-item>
+            <span (click)="openMenu()">
+                <ion-icon id="camera" name="camera"></ion-icon>
+            </span>
+            </ion-item>
+        </ion-col>
+        <ion-col>
+            <ion-item>
+                <ion-label>Ime</ion-label>
+                <ion-input type="text"></ion-input>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+    <ion-item>
+        <ion-label>Rasa</ion-label>
+        <ion-select [(ngModel)]="breed">
+            <ion-option value="dogoAregentino">Dogo Argentino</ion-option>
+            <ion-option value="pitBull">Pit Bull</ion-option>
+            <ion-option value="shihTzu">Shih Tzu</ion-option>
+            <ion-option value="goldenRetriever">Golden Retriever</ion-option>
+            <ion-option value="others">Ostali</ion-option>
+            <ion-option value="unknown">Mjesanac</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>Grad</ion-label>
+        <ion-select [(ngModel)]="city">
+            <ion-option value="PG">Podgorica</ion-option>
+            <ion-option value="NK">Niksic</ion-option>
+            <ion-option value="CT">Cetinje</ion-option>
+            <ion-option value="BR">Bar</ion-option>
+            <ion-option value="others">Ostali gradovi</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-row>
+        <ion-col>
+            <ion-item>
+                <ion-label>Starost</ion-label>
+                <ion-input type="number" min="1"></ion-input>
+            </ion-item>
+        </ion-col>
+        <ion-col>
+            <ion-item>
+                <ion-label>Odaberi</ion-label>
+                <ion-select [(ngModel)]="age">
+                    <ion-option value="day">Dana</ion-option>
+                    <ion-option value="months">Mjeseci</ion-option>
+                    <ion-option value="years">Godina</ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+    <ion-item>
+        <ion-textarea placeholder="Dodajte opis"></ion-textarea>
+    </ion-item>
+    <ion-list>
+        <ion-list-header class="item list-header">
+            <ion-label class="label">KONTAKT</ion-label>
+            <div class="button-effect"></div>
+        </ion-list-header>
+        <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Telefon</ion-label>
+            <ion-input type="tel"></ion-input>
+        </ion-item>
+    </ion-list>
+    <ion-row>
+        <ion-col>
+            <button ion-button full color="primary">Odustani</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button full color="secondary">Dodaj</button>
+        </ion-col>
+    </ion-row>
+</ion-content>
